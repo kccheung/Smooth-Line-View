@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5419845E198F31F800D4E7D6 /* SmoothLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5419845D198F31F800D4E7D6 /* SmoothLineView.m */; };
 		5EF58F54189D8AF40024C782 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF58F53189D8AF40024C782 /* Default-568h@2x.png */; };
-		6B250CCD13F9ED20002A5D9D /* SmoothLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B250CCC13F9ED20002A5D9D /* SmoothLineView.m */; };
 		6B8244E614E0FF67007F2487 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B250CCF13FA2127002A5D9D /* QuartzCore.framework */; };
 		6B93BE6F13F3374200DFAB23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B93BE6E13F3374200DFAB23 /* UIKit.framework */; };
 		6B93BE7113F3374200DFAB23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B93BE7013F3374200DFAB23 /* Foundation.framework */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5419845C198F31F800D4E7D6 /* SmoothLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothLineView.h; sourceTree = SOURCE_ROOT; };
+		5419845D198F31F800D4E7D6 /* SmoothLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothLineView.m; sourceTree = SOURCE_ROOT; };
 		5EF58F53189D8AF40024C782 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6B250CCB13F9ED20002A5D9D /* SmoothLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothLineView.h; sourceTree = "<group>"; };
-		6B250CCC13F9ED20002A5D9D /* SmoothLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothLineView.m; sourceTree = "<group>"; };
 		6B250CCF13FA2127002A5D9D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6B93BE6A13F3374200DFAB23 /* Smooth Line View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smooth Line View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B93BE6E13F3374200DFAB23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -89,14 +89,14 @@
 		6B93BE7413F3374200DFAB23 /* Smooth Line View */ = {
 			isa = PBXGroup;
 			children = (
+				6B93BE8013F3374200DFAB23 /* MainWindow.xib */,
 				6B93BE7D13F3374200DFAB23 /* Smooth_Line_ViewAppDelegate.h */,
 				6B93BE7E13F3374200DFAB23 /* Smooth_Line_ViewAppDelegate.m */,
-				6B93BE8013F3374200DFAB23 /* MainWindow.xib */,
 				6B93BE8313F3374200DFAB23 /* Smooth_Line_ViewViewController.h */,
 				6B93BE8413F3374200DFAB23 /* Smooth_Line_ViewViewController.m */,
 				6BA2EACB15E7F21C009779C5 /* Smooth_Line_ViewViewController.xib */,
-				6B250CCB13F9ED20002A5D9D /* SmoothLineView.h */,
-				6B250CCC13F9ED20002A5D9D /* SmoothLineView.m */,
+				5419845C198F31F800D4E7D6 /* SmoothLineView.h */,
+				5419845D198F31F800D4E7D6 /* SmoothLineView.m */,
 				6B93BE7513F3374200DFAB23 /* Supporting Files */,
 			);
 			path = "Smooth Line View";
@@ -141,6 +141,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = culturezoo;
+				TargetAttributes = {
+					6B93BE6913F3374200DFAB23 = {
+						DevelopmentTeam = 2KPPH36N77;
+					};
+				};
 			};
 			buildConfigurationList = 6B93BE6413F3374100DFAB23 /* Build configuration list for PBXProject "Smooth Line View" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -178,10 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5419845E198F31F800D4E7D6 /* SmoothLineView.m in Sources */,
 				6B93BE7B13F3374200DFAB23 /* main.m in Sources */,
 				6B93BE7F13F3374200DFAB23 /* Smooth_Line_ViewAppDelegate.m in Sources */,
 				6B93BE8513F3374200DFAB23 /* Smooth_Line_ViewViewController.m in Sources */,
-				6B250CCD13F9ED20002A5D9D /* SmoothLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +267,8 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Smooth Line View/Smooth Line View-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4486A19-69DA-4716-9E18-6EB2EB68880F";
+				PROVISIONING_PROFILE = "76685F00-4C9A-4DBA-9E1B-7AF03F299285";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "76685F00-4C9A-4DBA-9E1B-7AF03F299285";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,11 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smooth Line View/Smooth Line View-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Smooth Line View/Smooth Line View-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "76685F00-4C9A-4DBA-9E1B-7AF03F299285";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
