@@ -27,13 +27,13 @@
 #import <UIKit/UIKit.h>
 
 
+@interface SmoothLineView : UIView
 
-@interface SmoothLineView : UIView 
-
+@property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIColor *lineColor;
-@property (nonatomic, assign) CGFloat lineWidth;
-@property (nonatomic, assign) BOOL empty;
-
--(void)clear;
+@property (readwrite) CGFloat lineWidth;
+@property (readwrite) CGFloat lineAlpha;
+@property (readwrite) CGBlendMode lineMode;
+@property (nonatomic, strong) UIImage *mask;
 
 @end
