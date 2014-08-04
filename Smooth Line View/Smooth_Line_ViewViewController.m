@@ -48,7 +48,7 @@
 
 -(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-  [self.canvas clear];
+//  [self.canvas clear];
 }
 @end
 
